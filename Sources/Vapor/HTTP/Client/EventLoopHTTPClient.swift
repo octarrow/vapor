@@ -1,5 +1,5 @@
 extension HTTPClient {
-    func delegating(to eventLoop: EventLoop, logger: Logger) -> Client {
+    public func delegating(to eventLoop: EventLoop, logger: Logger) -> Client {
         EventLoopHTTPClient(
             http: self,
             eventLoop: eventLoop,

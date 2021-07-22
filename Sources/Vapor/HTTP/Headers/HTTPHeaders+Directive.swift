@@ -217,9 +217,10 @@ extension HTTPHeaders {
         }
 
         private func shouldQuote(_ parameter: Substring) -> Bool {
-            parameter.contains(where: { 
-                $0 == .space || $0 == .doubleQuote
-            })
+//            parameter.contains(where: {
+//                $0 == .space || $0 == .doubleQuote
+//            })
+            return true
         }
     }
 }
